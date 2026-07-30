@@ -16,6 +16,12 @@ updates:
       tauri-js:
         patterns:
           - "@tauri-apps/*"
+    ignore:
+      # TypeScript 7 currently breaks the Vue type-checking toolchain used here.
+      # Remove this guard only after a real upgrade branch passes the full CI.
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
     open-pull-requests-limit: 6
 
   - package-ecosystem: cargo
