@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+  --mc-paper: #f9f9f7;
+  --mc-paper-raised: #ffffff;
+  --mc-ink: #111111;
+  --mc-red: #cc0000;
+  --mc-muted: #686864;
+  --mc-rule: #111111;
+  --mc-rule-fine: #d8d8d2;
+  --mc-grid-dot: rgba(17, 17, 17, 0.16);
+  --mc-serif: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+  --mc-sans: "Avenir Next", Avenir, "Noto Sans SC", "PingFang SC", sans-serif;
+  --mc-mono: "SFMono-Regular", "Cascadia Mono", "Roboto Mono", monospace;
+  --mc-space-1: 4px;
+  --mc-space-2: 8px;
+  --mc-space-3: 12px;
+  --mc-space-4: 16px;
+  --mc-space-5: 20px;
+  --mc-space-6: 24px;
+  --mc-space-8: 32px;
+  --mc-rule-width: 1px;
+  --mc-fast: 120ms;
+  --mc-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+html > body,
+#app {
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  min-height: 640px;
+  margin: 0;
+  overflow: hidden;
+}
+
+html > body {
+  background: var(--mc-paper);
+  color: var(--mc-ink);
+  font-family: var(--mc-sans);
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--mc-red);
+  outline-offset: -2px;
+}
+
+::selection {
+  background: var(--mc-red);
+  color: var(--mc-paper-raised);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@mrcarlsama/studio",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./studio.css": "./src/studio.css"
+  },
+  "scripts": {
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@mrcarlsama/canvas-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "pinia": "catalog:",
+    "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@vue/devtools-api": "catalog:",
+    "pinia": "catalog:",
+    "typescript": "catalog:",
+    "vue": "catalog:",
+    "vue-tsc": "catalog:"
+  }
+}

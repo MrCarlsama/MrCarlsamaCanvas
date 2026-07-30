@@ -1,0 +1,35 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+target/
+.cache/
+output/
+
+# Tauri bundles
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# Local databases and imported assets
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+.mrcarlsama-canvas/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+*.log
+pnpm-debug.log*

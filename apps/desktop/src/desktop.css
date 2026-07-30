@@ -1,0 +1,9 @@
+#app {
+  isolation: isolate;
+}
+
+@media (max-height: 700px) {
+  .library-note {
+    display: none;
+  }
+}

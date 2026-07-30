@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#F9F9F7" />
+  <rect x="32" y="32" width="960" height="960" fill="none" stroke="#111111" stroke-width="32" />
+  <rect x="144" y="144" width="96" height="736" fill="#CC0000" />
+  <path d="M320 208H864V288H320ZM320 736H864V816H320Z" fill="#111111" />
+  <text
+    x="592"
+    y="650"
+    fill="#111111"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="360"
+    font-weight="700"
+    text-anchor="middle"
+  >MC</text>
+</svg>

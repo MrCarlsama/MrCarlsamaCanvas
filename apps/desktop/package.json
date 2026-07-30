@@ -1,0 +1,38 @@
+{
+  "name": "@mrcarlsama/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:web": "vite",
+    "build": "vue-tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mrcarlsama/canvas-core": "workspace:*",
+    "@mrcarlsama/editor-x6": "workspace:*",
+    "@mrcarlsama/studio": "workspace:*",
+    "@mrcarlsama/ui-newsprint": "workspace:*",
+    "@tauri-apps/api": "catalog:",
+    "@tauri-apps/plugin-dialog": "catalog:",
+    "@tauri-apps/plugin-fs": "catalog:",
+    "@tauri-apps/plugin-opener": "catalog:",
+    "@tauri-apps/plugin-sql": "catalog:",
+    "@vue/devtools-api": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "catalog:",
+    "@vitejs/plugin-vue": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:",
+    "vue-tsc": "catalog:"
+  }
+}

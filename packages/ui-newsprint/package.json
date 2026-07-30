@@ -1,0 +1,17 @@
+{
+  "name": "@mrcarlsama/ui-newsprint",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens.css": "./src/tokens.css"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,25 @@
+[package]
+name = "mrcarlsama-canvas"
+version = "0.1.0"
+description = "Desktop-first infinite canvas for visual planning"
+authors = ["MrCarlsama"]
+edition = "2021"
+rust-version = "1.88"
+license = "AGPL-3.0-only"
+repository = "https://github.com/MrCarlsama/MrCarlsamaCanvas"
+
+[lib]
+name = "mrcarlsama_canvas_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-sql = { version = "2", features = ["sqlite"] }

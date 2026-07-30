@@ -1,0 +1,22 @@
+{
+  "name": "@mrcarlsama/cards-built-in",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mrcarlsama/card-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@mrcarlsama/canvas-core": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

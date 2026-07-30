@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      frontend-tooling:
+        patterns:
+          - vite
+          - "@vitejs/*"
+          - vue
+          - vue-tsc
+          - typescript
+          - vitest
+      tauri-js:
+        patterns:
+          - "@tauri-apps/*"
+    open-pull-requests-limit: 6
+
+  - package-ecosystem: cargo
+    directory: /apps/desktop/src-tauri
+    schedule:
+      interval: weekly
+    groups:
+      tauri-rust:
+        patterns:
+          - tauri
+          - tauri-*
+    open-pull-requests-limit: 4
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
