@@ -27,7 +27,7 @@
     "format": "prettier . --write && cargo fmt --manifest-path apps/desktop/src-tauri/Cargo.toml"
   },
   "devDependencies": {
-    "prettier": "3.9.6",
+    "prettier": "3.9.8",
     "typescript": "5.9.3",
     "vitest": "4.1.10"
   }
