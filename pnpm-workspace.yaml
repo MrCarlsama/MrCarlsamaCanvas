@@ -6,11 +6,11 @@ catalog:
   "@antv/x6": 3.1.7
   "@antv/x6-vue-shape": 3.0.2
   "@tauri-apps/api": 2.11.1
-  "@tauri-apps/cli": 2.11.4
-  "@tauri-apps/plugin-dialog": 2.7.2
-  "@tauri-apps/plugin-fs": 2.5.1
-  "@tauri-apps/plugin-opener": 2.5.4
-  "@tauri-apps/plugin-sql": 2.4.0
+  "@tauri-apps/cli": 2.11.5
+  "@tauri-apps/plugin-dialog": 2.7.3
+  "@tauri-apps/plugin-fs": 2.5.2
+  "@tauri-apps/plugin-opener": 2.5.5
+  "@tauri-apps/plugin-sql": 2.4.1
   "@vitejs/plugin-vue": 6.0.8
   "@vue/devtools-api": 8.2.1
   pinia: 4.0.2
